@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c964925948.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo" />
+            <p class="agro">Agro Nepal</p>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="">My Account</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li></li>
+                </ul>
+            </nav>
+            <h2>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </h2>
+            <img src="images/menu2.png" class="menu-icon" onclick="togglemenu()" />
+        </div>
+    </header>
+    <div class="aboutus">
+        <p>Agro Nepal  provides all information related to agriculture in Nepal. We are committed to providing you best agricultural, gardening tools, fertilizers, seeds and supplies at the best way.</p>
+    </div>
+    <footer class="footer">
+        <div class="inner-footer">
+            <h4>Follow Us On</h4>
+            <div class="social-links">
+                <ul>
+                    <li class="social-items">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                    </li>
+
+                    <li class="social-items">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="social-items">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="social-items">
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="outer-footer">
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            , Agro Nepal.
+        </div>
+    </footer>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
+<script class="text/javascript">
+    var noti = document.querySelector("h2");
+    var select = document.querySelector(".select");
+    var button = document.getElementsByTagName("button");
+    for (but of button) {
+        but.addEventListener("click", (e) => {
+            var add = Number(noti.getAttribute("data-count") || 0);
+            noti.setAttribute("data-count", add + 1);
+            noti.classList.add("zero");
+            //for copy and past element
+            var parent = e.target.parentNode;
+            var clone = parent.cloneNode(true);
+            select.appendChild(clone);
+            clone.lastElementChild.innerText = "Buy-now";
+            if (clone) {
+                noti.onclick = () => {
+                    select.classList.toggle("display");
+                };
+            }
+            //image animation to cart//
+            var image = e.target.parentnode.querySelector("img");
+            var span = e.target.parentNode.querySelector(span);
+            var s_image = image.cloneNode(false);
+            span.appendChild(s_image);
+            span.classList.add("active");
+            setTimeout(() => {
+                span.removeChild(s_image);
+                span.classList.remove("active");
+            }, 500);
+        });
+    }
+</script>

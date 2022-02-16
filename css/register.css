@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.form_height{
+    background:rgb(9, 43, 18) ;
+    
+}
+.register{
+    padding: 10px;
+    text-align: center;
+    color: #e1e2e1;
+    opacity: 0.8;
+    height: 100px;
+    font-weight: 600;
+    font-size: 16px;
+}
+hr{
+    border: 1px solid #abb1ab;
+    margin-top: 15px;
+}
+.container{
+    padding: 10px;
+    width: 500px;
+   
+   background-color: rgb(9, 43, 18);
+   opacity: 0.;
+   border-radius: 5px;
+    transform: translate(85%);
+    border-radius: 10px;
+}
+input[type=text], input[type=password], input[type=tel]{
+width: 100%;
+padding: 15px;
+display: inline-block;
+border: none;
+background: #9a9c9a;
+margin: 5px 0 22px 0;
+border-radius: 5px;
+}
+input[type=text]:hover, input[type=password]:hover, input[type=tel]:hover{
+   opacity: 0.7;
+}
+.registration_form{
+    background-color: rgba(8, 8, 8, 0.8) ;
+    height: 10vh;
+}
+label{
+    color: #cec7c7;
+}
+.registerbtn{
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.registerbtn:hover{
+    opacity: 1;
+    border: 1px solid white;
+}
+p{
+    color: silver;
+    margin: 10px ;
+    text-align: center;
+}
